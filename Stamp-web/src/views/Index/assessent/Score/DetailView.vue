@@ -1,0 +1,106 @@
+<template>
+    <a-drawer :visible="viewVisible"
+              @close="handleClose"
+              :loading="viewLoading"
+              :destroyOnClose="true"
+              :maskClosable="false"
+              :width="650"
+              title="员工加减分查看">
+        <a-spin tip="正在加载中..." :spinning="viewLoading">
+            <a-form layout="vertical" class="detail-view">
+                <a-row :gutter="24">
+                    <a-col :span="12">
+                        <a-form-item label='考核规则'>
+                            {{viewData.ruleName || '--'}}
+                        </a-form-item>
+                    </a-col>
+                    <a-col :span="12">
+                        <a-form-item label='组织机构'>
+                            {{viewData.organizationName || '--'}}
+                        </a-form-item>
+                    </a-col>
+                    <a-col :span="12">
+                        <a-form-item label='被记录人'>
+                            {{viewData.employeeName || '--'}}
+                        </a-form-item>
+                    </a-col>
+                    <a-col :span="12">
+                        <a-form-item label='记录时间'>
+                            {{viewData.recordDateTime || '--'}}
+                        </a-form-item>
+                    </a-col>
+                    <a-col :span="12">
+                        <a-form-item label='扣分分值'>
+                            {{viewData.value || '--'}}
+                        </a-form-item>
+                    </a-col>
+                    <!-- <a-col :span="12">
+                        <a-form-item label='状态'>
+                            {{viewData.stateName || '--'}}
+                        </a-form-item>
+                    </a-col> -->
+
+                    <a-col :span="24" style="margin-bottom: 24px">
+                        <p class="des-label">描述</p>
+                        <p class="des-content">{{viewData.description || '--'}}</p>
+                    </a-col>
+                    <a-col :span="24" style="margin-bottom: 24px">
+                        <p class="des-label">附件</p>
+                        <p class="des-content" v-if="viewData.attachmentList && viewData.attachmentList.length">
+                            <a v-for="file in viewData.attachmentList" :href="file.url" target="_blank">{{file.fileName}}<br/></a>
+                        </p>
+                    </a-col>
+                </a-row>
+            </a-form>
+        </a-spin>
+        <div class="drawer-footer">
+            <a-button @click="handleClose">关闭</a-button>
+        </div>
+    </a-drawer>
+</template>
+
+<script>
+import { Row, Col, Button, Form, Drawer, Spin, Tooltip } from 'ant-design-vue';
+import { getDetail } from '@/remote/score';
+import { autoDoFn } from '@/utils/util';
+
+const { Item } = Form;
+
+export default {
+  name: 'DetailView',
+  components: {
+    ARow: Row,
+    ACol: Col,
+    AButton: Button,
+    AForm: Form,
+    AFormItem: Item,
+    ASelectOption: Option,
+    ADrawer: Drawer,
+    ASpin: Spin,
+    ATooltip: Tooltip,
+  },
+  props: ['viewVisible', 'handleClose', 'modifyId'],
+  data() {
+    return {
+      viewData: {},
+      viewLoading: false,
+    };
+  },
+  watch: {
+    viewVisible() {
+      if (this.modifyId) {
+        autoDoFn(async () => {
+          this.viewLoading = true;
+          const res = await getDetail({ id: this.modifyId });
+          if (res.success) {
+            this.viewData = {
+              ...res.data,
+            };
+          }
+          this.viewLoading = false;
+        });
+      }
+    },
+  },
+};
+</script>

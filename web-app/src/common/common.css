@@ -1,0 +1,39 @@
+.content-wrap {
+    position: relative;
+    height: 100%;
+}
+.nowposition{
+    height:40px;
+    line-height: 40px;
+    background:#e5e5e5;
+    padding-left:30px;
+    font-size: 14px;
+}
+.nowposition .titles{
+    font-size: 16px;
+}
+/*.infoBox{
+    padding:30px;
+    box-sizing: border-box;
+}*/
+.lines{
+    border:none;
+    border-top:2px solid #41a5f8;
+    margin:10px 0;
+}
+
+.ant-breadcrumb{
+    height: 40px;
+    line-height: 40px!important;
+    display: inline-block;
+}
+
+.returnBack,
+.returnBack:hover{
+    float: right;
+    margin-top: 4px;
+    margin-right: 30px;
+    border:none;
+    background: transparent;
+    color:#1890ff;
+}

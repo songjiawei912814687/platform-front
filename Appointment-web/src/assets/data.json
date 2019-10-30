@@ -1,0 +1,366 @@
+{
+  "depts": {
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": [
+      {
+        "id": 1,
+        "code": "G0000002",
+        "name": "中心窗口"
+      },
+      {
+        "id": 2,
+        "code": "G0000004",
+        "name": "市民之家"
+      },
+      {
+        "id": 3,
+        "code": "G0000018",
+        "name": "区住建局房管处"
+      },
+      {
+        "id": 4,
+        "code": "G0000019",
+        "name": "不动产登记中心"
+      },
+      {
+        "id": 5,
+        "code": "G0000020",
+        "name": "区财政局"
+      },
+      {
+        "id": 6,
+        "code": "G0000021",
+        "name": "区民政局"
+      },
+      {
+        "id": 7,
+        "code": "G0000022",
+        "name": "区经信局"
+      },
+      {
+        "id": 8,
+        "code": "G0000023",
+        "name": "规划富阳分局"
+      },
+      {
+        "id": 9,
+        "code": "G0000024",
+        "name": "国土富阳分局"
+      },
+      {
+        "id": 10,
+        "code": "G0000025",
+        "name": "区住建局"
+      },
+      {
+        "id": 11,
+        "code": "G0000026",
+        "name": "区城管局"
+      },
+      {
+        "id": 12,
+        "code": "G0000027",
+        "name": "区文广新局"
+      },
+      {
+        "id": 13,
+        "code": "G0000036",
+        "name": "区发改局"
+      },
+      {
+        "id": 14,
+        "code": "G0000037",
+        "name": "区环保局"
+      },
+      {
+        "id": 15,
+        "code": "G0000038",
+        "name": "区水利水电局"
+      },
+      {
+        "id": 16,
+        "code": "G0000039",
+        "name": "区人防办"
+      },
+      {
+        "id": 17,
+        "code": "G0000040",
+        "name": "区安监局"
+      },
+      {
+        "id": 18,
+        "code": "G0000041",
+        "name": "区气象局"
+      },
+      {
+        "id": 19,
+        "code": "G0000042",
+        "name": "区农林局"
+      },
+      {
+        "id": 20,
+        "code": "G0000043",
+        "name": "区商务局"
+      },
+      {
+        "id": 21,
+        "code": "G0000044",
+        "name": "区档案局"
+      },
+      {
+        "id": 22,
+        "code": "G0000045",
+        "name": "公安富阳区分局"
+      },
+      {
+        "id": 23,
+        "code": "G0000046",
+        "name": "区交通局"
+      },
+      {
+        "id": 24,
+        "code": "G0000047",
+        "name": "公积金富阳分中心"
+      },
+      {
+        "id": 25,
+        "code": "G0000048",
+        "name": "区市场监管局"
+      },
+      {
+        "id": 26,
+        "code": "G0000049",
+        "name": "区卫计局"
+      },
+      {
+        "id": 27,
+        "code": "G0000050",
+        "name": "区烟草专卖局"
+      },
+      {
+        "id": 28,
+        "code": "G0000051",
+        "name": "区教育局"
+      },
+      {
+        "id": 29,
+        "code": "G0000052",
+        "name": "区旅体局"
+      },
+      {
+        "id": 30,
+        "code": "G0000053",
+        "name": "区科技局"
+      },
+      {
+        "id": 31,
+        "code": "G0000054",
+        "name": "区民宗局"
+      },
+      {
+        "id": 32,
+        "code": "G0000055",
+        "name": "区侨办"
+      },
+      {
+        "id": 33,
+        "code": "G0000056",
+        "name": "区税务局"
+      },
+      {
+        "id": 34,
+        "code": "G0000057",
+        "name": "区人社局"
+      },
+      {
+        "id": 35,
+        "code": "G0000058",
+        "name": "区司法局"
+      },
+      {
+        "id": 36,
+        "code": "G0000059",
+        "name": "消防大队"
+      },
+      {
+        "id": 37,
+        "code": "G0000063",
+        "name": "出入境管理科"
+      },
+      {
+        "id": 38,
+        "code": "G0000064",
+        "name": "交警大队"
+      },
+      {
+        "id": 39,
+        "code": "G0000065",
+        "name": "区住建局招标办"
+      },
+      {
+        "id": 40,
+        "code": "G0000066",
+        "name": "区住建局许可科"
+      },
+      {
+        "id": 41,
+        "code": "G0000067",
+        "name": "国土富阳分局许可科"
+      },
+      {
+        "id": 42,
+        "code": "G0000068",
+        "name": "公安许可科"
+      }
+    ]
+  },
+  "groups": {
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": [
+      {
+        "id": 43,
+        "code": "G1",
+        "name": "档案"
+      },
+      {
+        "id": 44,
+        "code": "G2",
+        "name": "水务"
+      },
+      {
+        "id": 45,
+        "code": "G3",
+        "name": "供电"
+      },
+      {
+        "id": 46,
+        "code": "G4",
+        "name": "燃气"
+      },
+      {
+        "id": 47,
+        "code": "G5",
+        "name": "联通"
+      },
+      {
+        "id": 48,
+        "code": "G6",
+        "name": "移动"
+      },
+      {
+        "id": 49,
+        "code": "G7",
+        "name": "电信"
+      },
+      {
+        "id": 50,
+        "code": "G8",
+        "name": "华数"
+      },
+      {
+        "id": 51,
+        "code": "G9",
+        "name": "邮政"
+      }
+    ]
+  },
+  "date": {
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": [
+      {
+        "date": "2019-01-07"
+      },
+      {
+        "date": "2019-01-08"
+      },
+      {
+        "date": "2019-01-09"
+      },
+      {
+        "date": "2019-01-10"
+      },
+      {
+        "date": "2019-01-11"
+      },
+      {
+        "date": "2019-01-14"
+      },
+      {
+        "date": "2019-01-15"
+      }
+    ]
+  },
+  "appointmentSummary": {
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": [
+      {
+        "id": 12,
+        "deptCode": "G0000004",
+        "deptName": "市民之家",
+        "groupCode": "G1",
+        "groupName": "档案",
+        "beginTime": "10:00:00",
+        "endTime": "11:00:00",
+        "availableEnqueueQuantity": 10,
+        "maxEnqueueQuantity": 10
+      },
+      {
+        "id": 19,
+        "deptCode": "G0000004",
+        "deptName": "市民之家",
+        "groupCode": "G1",
+        "groupName": "档案",
+        "beginTime": "14:00:00",
+        "endTime": "15:00:00",
+        "availableEnqueueQuantity": 10,
+        "maxEnqueueQuantity": 10
+      },
+      {
+        "id": 26,
+        "deptCode": "G0000004",
+        "deptName": "市民之家",
+        "groupCode": "G1",
+        "groupName": "档案",
+        "beginTime": "15:00:00",
+        "endTime": "16:00:00",
+        "availableEnqueueQuantity": 10,
+        "maxEnqueueQuantity": 10
+      }
+    ]
+  },
+  "list": 	{
+    "success": true,
+    "message": "请求成功",
+    "code": 200,
+    "data": [
+      {
+        "id": 1,
+        "code": "320923199109295412",
+        "name": "杨正武",
+        "mobile": "15190052893",
+        "groupCode": "G1",
+        "appointDateTime": "2019-1-12 13:30:00",
+        "amputated": 0,
+        "appointmentName": "预约成功"
+      },
+      {
+        "id": 2,
+        "code": "320923199109295412",
+        "name": "杨正武",
+        "mobile": "15190052893",
+        "groupCode": "G1",
+        "appointDateTime": "2018-1-11 15:30:00",
+        "amputated": 0,
+        "appointmentName": "预约成功"
+      }
+    ]
+  }
+}

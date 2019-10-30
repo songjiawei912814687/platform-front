@@ -1,0 +1,89 @@
+@main-color: #41a5f8;
+
+.content-wrap {
+  position: relative;
+  height: 100%;
+  .content__title{
+    color: #666666;
+    font-size: 24px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 24px;
+  }
+  .action {
+    margin-top: 10px;
+    padding-left: 24px;
+    .ant-btn {
+      margin-right: 10px;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: auto;
+    border-top: 1px solid #eef1f3;
+    .ant-table-pagination.ant-pagination{
+      padding-right: 20px;
+    }
+  }
+}
+
+.monthPickerClass .ant-calendar-month-panel-header{
+  display: none;
+}
+
+.ant-drawer-body{
+  height: calc(100% - 110px);
+  overflow: auto;
+}
+.ivu-drawer-body{
+  overflow: hidden;
+  .ant-spin-nested-loading {
+    position: relative;
+    height: calc(100% - 51px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.drawer-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px 16px;
+  text-align: right;
+  left: 0;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.detail-view{
+  .detail-view-row{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .ant-form-item-label label{
+    color: #888;
+  }
+  .ant-form-item-children{
+    font-size: 16px;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+  }
+  .des-label{
+    color: #888;
+    font-size: 14px;
+  }
+  .des-content{
+    font-size: 16px;
+    color: #333;
+  }
+}

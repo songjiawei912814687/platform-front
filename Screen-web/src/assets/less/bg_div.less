@@ -1,0 +1,113 @@
+.bg_div {
+  height: 324px;
+  margin: 0;
+
+  > .bg_title {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(2, 55, 68);
+    font-size: 30px;
+    font-family: "SimHei";
+    color: rgb(253, 249, 249);
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-left: 25px;
+  }
+
+  > .bg_body {
+    width: 100%;
+    height: 312px;
+    background-color: rgba(1, 21, 24, 0.8);
+    color: #fff;
+
+    p {
+      text-align: center;
+      font-size: 22px;
+      font-family: "SimHei";
+      color: rgb(249, 253, 252);
+    }
+
+    .ant-row {
+      height: 100%;
+      .ant-col-12 {
+        height: 100%;
+      }
+    }
+
+    .divSize {
+      height: 100%;
+      padding: 0 20px;
+      overflow: hidden;
+      position: relative;
+      top: -10px;
+
+      .echarts_title {
+        position: absolute;
+        top: 20px;
+        left: 80px;
+      }
+
+      .button {
+        border-radius: 4px;
+        width: 32px;
+        height: 16px;
+        display: inline-block;
+      }
+
+      .text {
+        font-size: 24px;
+        font-family: "SimHei";
+        color: rgb(251, 254, 254);
+        position: absolute;
+        left: 0;
+        top: 2px;
+        overflow: hidden; /*自动隐藏文字*/
+        text-overflow: ellipsis; /*文字隐藏后添加省略号*/
+        white-space: nowrap; /*强制不换行*/
+        width: 7em; /*不允许出现半汉字截断*/
+      }
+
+      .tiao {
+        width: 100%;
+        height: 6px;
+        margin: 9px 0px;
+        position: relative;
+      }
+
+      .ant-row {
+        height: 1px;
+        margin: 10px 0;
+      }
+
+      ul {
+        padding-top: 30px;
+
+        li {
+          list-style: none;
+
+          .text_li {
+            float: left;
+            font-size: 24px;
+            padding-left: 30px;
+          }
+        }
+      }
+
+      .ant-progress {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+
+        .ant-progress-text {
+          font-size: 26px;
+          font-family: "SimHei";
+          color: rgb(253, 251, 251);
+        }
+      }
+    }
+  }
+}
